@@ -189,15 +189,18 @@
                     <main className="flex-1 w-full max-w-xl bg-white mx-auto p-6 flex flex-col justify-center my-4 rounded-2xl shadow-sm border border-slate-100">
                         
                         {/* الخطوة 1 */}
-                        {step === 1 && (
-                            <div className="text-center animate-fadeIn">
-                                <div className="mb-6 inline-block p-4 rounded-full bg-slate-50 border border-slate-100">
-                                    <svg className="w-20 h-20 text-[#1D2E87] mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M4.5 12a7.5 7.5 0 0015 0m-15 0a7.5 7.5 0 1115 0m-15 0H3m16.5 0H21m-1.5 0H12m-8.457 3.077l1.41-.513m14.095-5.128l1.41-.513M5.106 17.785l1.15-.827m11.488-8.23l1.15-.827M8.14 21.27l.707-.957m10.306-6.425l.707-.956M10.5 22V20m3 2V20" />
-                                    </svg>
-                                </div>
-                                <h2 className="text-2xl font-extrabold text-[#1D2E87] tracking-tight">الدكتور ظافر الشهري</h2>
-                                <p className="text-sm font-semibold text-[#76B843] mt-1">استشاري جراحة السمنة والمناظير المتقدمة</p>
+{step === 1 && (
+    <div className="text-center animate-fadeIn">
+        {/* قمنا بتغيير الـ p-4 إلى p-0 وإلغاء الخلفية الرمادية bg-slate-50 لكي تظهر الصورة واضحة وبكامل حجمها الدائري */}
+        <div className="mb-6 inline-block p-0 rounded-full overflow-hidden border-2 border-slate-200 w-24 h-24">
+            <img 
+                src="https://i.postimg.cc/Hx1zL8jF/IMG-4512.jpg" 
+                alt="الدكتور ظافر الشهري" 
+                className="w-full h-full object-cover"
+            />
+        </div>
+        <h2 className="text-2xl font-extrabold text-[#1D2E87] tracking-tight">الدكتور ظافر الشهري</h2>
+        <p className="text-sm font-semibold text-[#76B843] mt-1">استشاري جراحة السمنة والمناظير المتقدمة</p>
                                 
                                 <div className="my-6 space-y-2 text-right bg-slate-50 p-4 rounded-xl border border-slate-100 text-sm">
                                     <p className="flex items-start"><span className="text-[#76B843] ml-2">•</span> استشاري الجراحة العامة وجراحة المناظير المتقدمة</p>
